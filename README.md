@@ -1,6 +1,9 @@
 # challenge_flutter_1
 
-A new Flutter project.
+This my First project about my lists of Challenges about code (Flutter & Dart, Javascript, PHP).
+Welcome to the funny
+
+and 
 
 ## Getting Started
 
