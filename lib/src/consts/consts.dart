@@ -5,3 +5,11 @@ var themeMyUi = ThemeData(
     primarySwatch: Colors.blue,
 );
 
+class Fonts{
+
+}
+
+class ColorsUi{
+  
+}
+
