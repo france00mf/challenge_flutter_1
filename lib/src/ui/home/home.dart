@@ -18,14 +18,37 @@ class _HomeState extends State<Home> {
         children: <Widget>[
           Expanded(
             flex: 50,
-            child: Container(
-                //color: Colors.lightBlue[400],
-                ),
+            child: Container(),
           ),
           Expanded(
             flex: 50,
             child: Container(
-              color: Colors.blueGrey,
+              child: Stack(
+                children: <Widget>[
+                  Positioned(
+                      child: Container(
+                          margin: EdgeInsets.only(left: 20, right: 20),
+                          child: ListView(
+                            children: <Widget>[
+                              Container(
+                                height: 200,
+                                color: Colors.yellow,
+                                child: Text("France"),
+                              ),
+                              Container(
+                                height: 20,
+                                color: Colors.orange,
+                                child: Text("France"),
+                              )
+                            ],
+                          ))),
+                ],
+              ),
+              decoration: BoxDecoration(
+                  color: Colors.blueGrey,
+                  borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(50),
+                      topRight: Radius.circular(50))),
             ),
           )
         ],
