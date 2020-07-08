@@ -1,0 +1,6 @@
+Expanded(
+            flex: 50,
+            child: Container(
+              color: Colors.lightBlue[400],
+            ),
+          ),
