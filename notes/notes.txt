@@ -4,3 +4,9 @@ Expanded(
               color: Colors.lightBlue[400],
             ),
           ),
+
+--------------------------------------------------
+Flex(
+direction: axis.vertical,
+children: <Widget>[}
+)

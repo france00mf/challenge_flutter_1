@@ -14,41 +14,37 @@ class _HomeState extends State<Home> {
         backgroundColor: Colors.white,
         elevation: 0,
       ),
-      body: Column(
+      body: Stack(
         children: <Widget>[
-          Expanded(
-            flex: 50,
-            child: Container(),
-          ),
-          Expanded(
-            flex: 50,
-            child: Container(
-              child: Stack(
-                children: <Widget>[
-                  Positioned(
-                      child: Container(
-                          margin: EdgeInsets.only(left: 20, right: 20),
-                          child: ListView(
-                            children: <Widget>[
-                              Container(
-                                height: 200,
-                                color: Colors.yellow,
-                                child: Text("France"),
-                              ),
-                              Container(
-                                height: 20,
-                                color: Colors.orange,
-                                child: Text("France"),
-                              )
-                            ],
-                          ))),
-                ],
+          Flex(
+            direction: Axis.vertical,
+            children: <Widget>[
+              Expanded(
+                flex: 50,
+                child: Column(
+                  children: <Widget>[Container()],
+                ),
               ),
+              Expanded(
+                flex: 50,
+                child: Container(
+                  decoration: BoxDecoration(
+                      color: Colors.blueGrey,
+                      borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(50),
+                          topRight: Radius.circular(50))),
+                ),
+              )
+            ],
+          ),
+          Align(
+            alignment: Alignment.bottomCenter,
+            child: Container(
+              height: 415,
+              margin: EdgeInsets.only(bottom: 40),
               decoration: BoxDecoration(
-                  color: Colors.blueGrey,
-                  borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(50),
-                      topRight: Radius.circular(50))),
+                color: Colors.black.withOpacity(0.5),
+              ),
             ),
           )
         ],
@@ -56,3 +52,6 @@ class _HomeState extends State<Home> {
     );
   }
 }
+/*
+
+*/
