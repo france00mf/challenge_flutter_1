@@ -134,8 +134,17 @@ class _HomeState extends State<Home> {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: <Widget>[
-                          Text("Find a companion"),
-                          Icon(Icons.arrow_forward)
+                          Text(
+                            "Find a companion",
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 17),
+                          ),
+                          Icon(
+                            Icons.arrow_forward,
+                            color: Colors.white,
+                          )
                         ],
                       ),
                       margin: EdgeInsets.only(bottom: 30),
