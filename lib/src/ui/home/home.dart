@@ -13,6 +13,10 @@ class _HomeState extends State<Home> {
       appBar: AppBar(
         backgroundColor: Colors.white,
         elevation: 0,
+        title: Text(
+          "Luncher",
+          style: TextStyle(color: Colors.black),
+        ),
       ),
       body: Stack(
         children: <Widget>[
