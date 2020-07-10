@@ -10,3 +10,7 @@ Flex(
 direction: axis.vertical,
 children: <Widget>[}
 )
+
+-----------------------------------------
+
+width: MediaQuerie.of(context).size.width * 0.5,

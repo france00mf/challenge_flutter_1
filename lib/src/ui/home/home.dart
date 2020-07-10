@@ -48,13 +48,75 @@ class _HomeState extends State<Home> {
                         direction: Axis.vertical,
                         children: <Widget>[
                           Expanded(
-                              flex: 30,
+                              flex: 28,
                               child: Container(
-                                  //color: Colors.amber,
-                                  )),
+                                width: double.infinity,
+                                child: Column(
+                                  children: <Widget>[
+                                    Align(
+                                      alignment: Alignment.topLeft,
+                                      child: Container(
+                                        width: 65,
+                                        height: 65,
+                                        decoration: BoxDecoration(
+                                            color: Colors.pink,
+                                            borderRadius: BorderRadius.all(
+                                                Radius.circular(15))),
+                                      ),
+                                    ),
+                                    Align(
+                                      alignment: Alignment.topLeft,
+                                      child: Container(
+                                        alignment: Alignment.topLeft,
+                                        width: 120,
+                                        child: Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.spaceBetween,
+                                          children: <Widget>[
+                                            Text("Richard Torris"),
+                                            Text("Pro")
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                    Align(
+                                        alignment: Alignment.topLeft,
+                                        child: Text("@richardino")),
+                                  ],
+                                ),
+                                //color: Colors.amber,
+                              )),
                           Expanded(
                               flex: 70,
                               child: Container(
+                                child: Column(
+                                  children: <Widget>[
+                                    Container(
+                                      child: Row(
+                                        children: <Widget>[
+                                          Expanded(
+                                            flex: 50,
+                                            child: Column(
+                                              children: <Widget>[
+                                                Text("Lunch Time"),
+                                                Text(
+                                                  "Let's find the best companion for you",
+                                                )
+                                              ],
+                                            ),
+                                          ),
+                                          Expanded(
+                                              flex: 50,
+                                              child: Container(
+                                                decoration: BoxDecoration(
+                                                    color: Colors.red),
+                                              ))
+                                        ],
+                                      ),
+                                      height: 180,
+                                    )
+                                  ],
+                                ),
                                 decoration: BoxDecoration(
                                     color: Colors.white,
                                     borderRadius:
@@ -84,7 +146,7 @@ class _HomeState extends State<Home> {
                   ),
                 ],
               ),
-              height: 415,
+              height: 408,
               margin: EdgeInsets.only(bottom: 40),
               decoration: BoxDecoration(
                   //color: Colors.black.withOpacity(0.5),
@@ -97,9 +159,21 @@ class _HomeState extends State<Home> {
   }
 }
 /*
-Container(
-                      width: 100,
-                      height: 40,
-                      color: Colors.pink,
-                    ),
+Expanded(
+                                      flex: 50,
+                                      child: Column(
+                                        children: <Widget>[
+                                          Text("Lunch Time"),
+                                          Text(
+                                            "Let's find the best companion for you",
+                                          )
+                                        ],
+                                      ),
+                                    ),
+                                    Expanded(
+                                        flex: 50,
+                                        child: Container(
+                                          decoration:
+                                              BoxDecoration(color: Colors.red),
+                                        ))
 */
