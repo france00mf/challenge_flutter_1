@@ -99,16 +99,32 @@ class _HomeState extends State<Home> {
                                       child: Row(
                                         children: <Widget>[
                                           Expanded(
-                                            flex: 50,
-                                            child: Column(
-                                              children: <Widget>[
-                                                Text("Lunch Time"),
-                                                Text(
-                                                  "Let's find the best companion for you",
-                                                )
-                                              ],
-                                            ),
-                                          ),
+                                              flex: 50,
+                                              child: Container(
+                                                padding:
+                                                    EdgeInsets.only(left: 40),
+                                                child: Column(
+                                                  mainAxisAlignment:
+                                                      MainAxisAlignment.center,
+                                                  children: <Widget>[
+                                                    Align(
+                                                      alignment:
+                                                          Alignment.centerLeft,
+                                                      child: Text("Lunch Time"),
+                                                    ),
+                                                    Container(
+                                                      height: 10,
+                                                    ),
+                                                    Align(
+                                                      alignment:
+                                                          Alignment.centerLeft,
+                                                      child: Text(
+                                                        "Let's find the best \ncompanion for you",
+                                                      ),
+                                                    ),
+                                                  ],
+                                                ),
+                                              )),
                                           Expanded(
                                               flex: 50,
                                               child: Container(
