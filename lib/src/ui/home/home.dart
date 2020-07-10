@@ -54,6 +54,7 @@ class _HomeState extends State<Home> {
                           Expanded(
                               flex: 28,
                               child: Container(
+                                padding: EdgeInsets.only(left: 40),
                                 width: double.infinity,
                                 child: Column(
                                   children: <Widget>[
@@ -72,12 +73,18 @@ class _HomeState extends State<Home> {
                                       alignment: Alignment.topLeft,
                                       child: Container(
                                         alignment: Alignment.topLeft,
-                                        width: 120,
+                                        width: 165,
                                         child: Row(
                                           mainAxisAlignment:
                                               MainAxisAlignment.spaceBetween,
                                           children: <Widget>[
-                                            Text("Richard Torris"),
+                                            Text(
+                                              "Richard Torris",
+                                              style: TextStyle(
+                                                  color: Colors.white,
+                                                  fontWeight: FontWeight.bold,
+                                                  fontSize: 20),
+                                            ),
                                             Text("Pro")
                                           ],
                                         ),
@@ -110,7 +117,14 @@ class _HomeState extends State<Home> {
                                                     Align(
                                                       alignment:
                                                           Alignment.centerLeft,
-                                                      child: Text("Lunch Time"),
+                                                      child: Text(
+                                                        "Lunch Time",
+                                                        style: TextStyle(
+                                                            color: Colors.black,
+                                                            fontWeight:
+                                                                FontWeight.bold,
+                                                            fontSize: 24),
+                                                      ),
                                                     ),
                                                     Container(
                                                       height: 10,
@@ -120,6 +134,12 @@ class _HomeState extends State<Home> {
                                                           Alignment.centerLeft,
                                                       child: Text(
                                                         "Let's find the best \ncompanion for you",
+                                                        style: TextStyle(
+                                                            color: Colors
+                                                                .grey[400],
+                                                            fontWeight:
+                                                                FontWeight.bold,
+                                                            fontSize: 14),
                                                       ),
                                                     ),
                                                   ],
@@ -129,7 +149,8 @@ class _HomeState extends State<Home> {
                                               flex: 50,
                                               child: Container(
                                                 decoration: BoxDecoration(
-                                                    color: Colors.red),
+                                                    //color: Colors.red
+                                                    ),
                                               ))
                                         ],
                                       ),
