@@ -69,11 +69,14 @@ class _HomeState extends State<Home> {
                                                 Radius.circular(15))),
                                       ),
                                     ),
+                                    Container(
+                                      height: 15,
+                                    ),
                                     Align(
                                       alignment: Alignment.topLeft,
                                       child: Container(
                                         alignment: Alignment.topLeft,
-                                        width: 165,
+                                        width: 190,
                                         child: Row(
                                           mainAxisAlignment:
                                               MainAxisAlignment.spaceBetween,
@@ -85,20 +88,50 @@ class _HomeState extends State<Home> {
                                                   fontWeight: FontWeight.bold,
                                                   fontSize: 20),
                                             ),
-                                            Text("Pro")
+                                            Container(
+                                                padding: EdgeInsets.only(
+                                                  bottom: 5,
+                                                  top: 5,
+                                                  right: 15,
+                                                  left: 15,
+                                                ),
+                                                decoration: BoxDecoration(
+                                                    borderRadius:
+                                                        BorderRadius.all(
+                                                            Radius.circular(
+                                                                25)),
+                                                    color: Colors.white
+                                                        .withOpacity(0.5)),
+                                                child: Text(
+                                                  "Pro",
+                                                  style: TextStyle(
+                                                      color: Colors.white,
+                                                      fontWeight:
+                                                          FontWeight.normal,
+                                                      fontSize: 14),
+                                                ))
                                           ],
                                         ),
                                       ),
                                     ),
+                                    Container(
+                                      height: 7,
+                                    ),
                                     Align(
                                         alignment: Alignment.topLeft,
-                                        child: Text("@richardino")),
+                                        child: Text(
+                                          "@richardino",
+                                          style: TextStyle(
+                                              color: Colors.grey[400],
+                                              fontWeight: FontWeight.normal,
+                                              fontSize: 12),
+                                        )),
                                   ],
                                 ),
                                 //color: Colors.amber,
                               )),
                           Expanded(
-                              flex: 70,
+                              flex: 55,
                               child: Container(
                                 child: Column(
                                   children: <Widget>[
