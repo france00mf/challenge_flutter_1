@@ -242,21 +242,5 @@ class _HomeState extends State<Home> {
   }
 }
 /*
-Expanded(
-                                      flex: 50,
-                                      child: Column(
-                                        children: <Widget>[
-                                          Text("Lunch Time"),
-                                          Text(
-                                            "Let's find the best companion for you",
-                                          )
-                                        ],
-                                      ),
-                                    ),
-                                    Expanded(
-                                        flex: 50,
-                                        child: Container(
-                                          decoration:
-                                              BoxDecoration(color: Colors.red),
-                                        ))
+
 */
