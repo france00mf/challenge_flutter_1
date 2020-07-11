@@ -9,7 +9,7 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.orange,
       appBar: AppBar(
         backgroundColor: Colors.white,
         elevation: 0,
@@ -23,12 +23,7 @@ class _HomeState extends State<Home> {
           Flex(
             direction: Axis.vertical,
             children: <Widget>[
-              Expanded(
-                flex: 50,
-                child: Column(
-                  children: <Widget>[Container()],
-                ),
-              ),
+              Expanded(flex: 50, child: Container()),
               Expanded(
                 flex: 50,
                 child: Container(
